@@ -7,11 +7,10 @@ Passe NUR recognize_ingredients() an dein Modell an.
 """
 import os
 import json
-DEMO_VISION = 1
 def recognize_ingredients(image):
     # Optionaler JSON-Demo-Modus zum Testen der Oberfläche.
     # Setze DEMO_VISION=1, um Beispielergebnisse zurückzugeben.
-    if os.getenv("DEMO_VISION", "0") == "1":
+    if os.getenv("DEMO_VISION", "1") == "1":
         return [
             {"name":"Tomaten","confidence":0.95},
             {"name":"Paprika","confidence":0.91},
