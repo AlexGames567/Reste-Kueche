@@ -7,7 +7,7 @@ Passe NUR recognize_ingredients() an dein Modell an.
 """
 import os
 import json
-DEMO_VISION = "1"
+DEMO_VISION = 1
 def recognize_ingredients(image):
     # Optionaler JSON-Demo-Modus zum Testen der Oberfläche.
     # Setze DEMO_VISION=1, um Beispielergebnisse zurückzugeben.
